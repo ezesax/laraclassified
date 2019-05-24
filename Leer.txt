@@ -1,0 +1,29 @@
+https://bestblackforum.com/t/laraclassified-classified-ads-web-application-v6-4/248
+
+Front Area (Vendedor)
+http://laraclassified.local:8081 
+Email: user@demosite.com Password: 123456 
+
+Front Area (Comprador)
+http://laraclassified.local:8081 
+Email: logidatweb@gmail.com Password: 300182 
+
+Admin Panel 4
+http://laraclassified.local:8081/admin
+Email: admin@demosite.com Password: 123456
+
+
+Insert the following lines to your system contab. 
+Please note, below timings for running the cron jobs are the recommended, you can change it if you want.
+
+Cannot find PHP_BIN_PATH in your server. Please find it and replace all {PHP_BIN_PATH} text below with that one.
+Ex: /usr/bin/php7.0, /usr/bin/php, /usr/lib/php.
+# You have to configure the Ads Cleaner command on your server crontab that to run each hour.
+0 * * * * {PHP_BIN_PATH} -q C:\AppServ\www\laraclassified/artisan ads:clean 2>&1
+
+Remember that all your configurations were saved in [APP_ROOT]/.env file. You can change it when needed. 
+
+Now, you can go to your Admin Panel with link: http://laraclassified.local:8081/admin. Visit your website: http://laraclassified.local:8081 
+
+logidatweb@gmail.com
+admin1234
